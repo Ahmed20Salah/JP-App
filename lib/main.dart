@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:jp/ui/pages/category.dart';
 import 'package:jp/ui/pages/home.dart';
+import 'package:jp/ui/pages/other.dart';
 
 import 'ui/pages/register.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Category('مطاعم'),
+      home: OtherScreen(),
     );
   }
 }

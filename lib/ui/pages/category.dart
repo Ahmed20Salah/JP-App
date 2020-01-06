@@ -16,15 +16,25 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
+      body: Column(
         children: <Widget>[
+          Container(
+            color: Color(0xffF2CB3B),
+            height: 24.0,
+          ),
           Appbar(title),
           Search(),
-          _item(_testData),
-          _item(_testData),
-          _item(_testData),
-          _item(_testData),
-          _item(_testData),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height -145.0,
+            child: ListView.builder(
+              padding: EdgeInsets.symmetric(vertical: 0),
+              itemCount: 6,
+              itemBuilder: (context, index) {
+                return _item(_testData);
+              },
+            ),
+          )
         ],
       ),
     );
