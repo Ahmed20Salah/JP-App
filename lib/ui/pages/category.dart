@@ -13,7 +13,7 @@ class Category extends StatelessWidget {
       name: 'مطعم الرايق',
       address: 'بجوار شارع عثمان',
       vote: 3,
-      image: 'assets/back.png');
+      image: 'assets/back.png' ,phone: '010989619663');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
