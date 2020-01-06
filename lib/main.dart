@@ -4,6 +4,7 @@ import 'package:jp/model/item.dart';
 import 'package:jp/ui/pages/category.dart';
 import 'package:jp/ui/pages/home.dart';
 import 'package:jp/ui/pages/item_description.dart';
+import 'package:jp/ui/pages/order.dart';
 import 'package:jp/ui/pages/other.dart';
 
 import 'ui/pages/register.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ItemDescription(item: _testData),
+      home: Order(),
     );
   }
 }

@@ -89,7 +89,7 @@ class OtherScreenState extends State<OtherScreen> {
             child: Container(
               height: 30.0,
               child: Image.asset(
-                'assets/dish.png',
+                'assets/location.png',
                 fit: BoxFit.cover,
               ),
             ),
