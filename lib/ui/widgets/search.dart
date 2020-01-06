@@ -13,7 +13,7 @@ class SearchState extends State<Search> {
     return Container(
         color: Color(0xff2D2D2D),
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 16),
+        padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 16),
         child: Container(
           decoration: BoxDecoration(
               color: Colors.white, borderRadius: BorderRadius.circular(30.0)),

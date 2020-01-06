@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jp/ui/widgets/appbar.dart';
+import 'package:jp/ui/widgets/drewar.dart';
 import 'package:jp/ui/widgets/search.dart';
 
 class Home extends StatefulWidget {
@@ -15,7 +16,9 @@ class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: DrawerDesgin(),
+      ),
       body: ListView(
         children: <Widget>[Appbar('الرئيسية'), Search(), _body()],
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:jp/model/item.dart';
 import 'package:jp/ui/widgets/appbar.dart';
+import 'package:jp/ui/widgets/drewar.dart';
 import 'package:jp/ui/widgets/search.dart';
 
 class Category extends StatelessWidget {
@@ -16,6 +17,9 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: DrawerDesgin(),
+      ),
       body: Column(
         children: <Widget>[
           Container(
@@ -26,7 +30,7 @@ class Category extends StatelessWidget {
           Search(),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height -145.0,
+            height: MediaQuery.of(context).size.height - 145.0,
             child: ListView.builder(
               padding: EdgeInsets.symmetric(vertical: 0),
               itemCount: 6,

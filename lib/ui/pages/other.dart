@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jp/ui/widgets/appbar.dart';
+import 'package:jp/ui/widgets/drewar.dart';
 import 'package:jp/ui/widgets/search.dart';
 
 class OtherScreen extends StatefulWidget {
@@ -15,6 +16,9 @@ class OtherScreenState extends State<OtherScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: DrawerDesgin(),
+      ),
       // backgroundColor: Color(0xffF2CB3B),
       body: SingleChildScrollView(
         child: Form(
