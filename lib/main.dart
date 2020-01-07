@@ -8,6 +8,7 @@ import 'package:jp/ui/pages/home.dart';
 import 'package:jp/ui/pages/item_description.dart';
 import 'package:jp/ui/pages/order.dart';
 import 'package:jp/ui/pages/other.dart';
+import 'package:jp/ui/pages/policy.dart';
 
 import 'ui/pages/register.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: EndTransaction(),
+      home: Policy(),
     );
   }
 }
