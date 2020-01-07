@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:jp/model/item.dart';
 import 'package:jp/ui/pages/category.dart';
 import 'package:jp/ui/pages/delivery_steps.dart';
+import 'package:jp/ui/pages/end_transaction.dart';
 import 'package:jp/ui/pages/home.dart';
 import 'package:jp/ui/pages/item_description.dart';
 import 'package:jp/ui/pages/order.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DeliverySteps(),
+      home: EndTransaction(),
     );
   }
 }
