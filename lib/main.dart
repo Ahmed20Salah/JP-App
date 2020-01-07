@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:jp/model/item.dart';
+import 'package:jp/ui/pages/about_us.dart';
 import 'package:jp/ui/pages/category.dart';
+import 'package:jp/ui/pages/common.dart';
 import 'package:jp/ui/pages/delivery_steps.dart';
 import 'package:jp/ui/pages/end_transaction.dart';
 import 'package:jp/ui/pages/home.dart';
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Terms(),
+      home: Commmon(),
     );
   }
 }

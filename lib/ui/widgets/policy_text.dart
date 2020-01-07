@@ -19,11 +19,12 @@ class PolicyText extends StatelessWidget {
                 color: Color(0xff9A9898)),
           ),
           Container(
-              width: MediaQuery.of(context).size.width - 60.0,
-              child: Text(
-                text,
-                style: TextStyle(color: Color(0xff9A9898)),
-              ))
+            width: MediaQuery.of(context).size.width - 60.0,
+            child: Text(
+              text,
+              style: TextStyle(color: Color(0xff9A9898)),
+            ),
+          ),
         ],
       ),
     );
