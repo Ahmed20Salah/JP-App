@@ -4,6 +4,7 @@ import 'package:jp/model/item.dart';
 import 'package:jp/ui/widgets/appbar.dart';
 import 'package:jp/ui/widgets/drewar.dart';
 import 'package:jp/ui/widgets/search.dart';
+import 'package:jp/ui/widgets/notification_bar.dart';
 
 class ItemDescription extends StatelessWidget {
   final Color secColor = Color(0xff9A9898);
@@ -18,10 +19,7 @@ class ItemDescription extends StatelessWidget {
         child: DrawerDesgin(),
       ),
       body: Column(children: <Widget>[
-        Container(
-          color: Color(0xffF2CB3B),
-          height: 24.0,
-        ),
+        NotificationBar(),
         Appbar(item.name),
         Search(),
         Container(
@@ -177,10 +175,10 @@ class ItemDescription extends StatelessWidget {
     );
   }
 
-   Widget _sendButton(context) {
+  Widget _sendButton(context) {
     return Container(
       width: MediaQuery.of(context).size.width - 40.0,
-      margin: EdgeInsets.symmetric(vertical: 20.0  ,horizontal: 20.0) ,
+      margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
       child: InkWell(
         child: Container(
           decoration: BoxDecoration(

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:jp/model/item.dart';
 import 'package:jp/ui/widgets/appbar.dart';
 import 'package:jp/ui/widgets/drewar.dart';
+import 'package:jp/ui/widgets/notification_bar.dart';
 import 'package:jp/ui/widgets/search.dart';
 
 class Category extends StatelessWidget {
@@ -22,10 +23,7 @@ class Category extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          Container(
-            color: Color(0xffF2CB3B),
-            height: 24.0,
-          ),
+         NotificationBar(),
           Appbar(title),
           Search(),
           Container(

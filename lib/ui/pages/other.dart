@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jp/ui/widgets/appbar.dart';
 import 'package:jp/ui/widgets/drewar.dart';
+import 'package:jp/ui/widgets/notification_bar.dart';
 import 'package:jp/ui/widgets/search.dart';
 
 class OtherScreen extends StatefulWidget {
@@ -24,10 +25,7 @@ class OtherScreenState extends State<OtherScreen> {
         child: Form(
           child: Column(
             children: <Widget>[
-              Container(
-                color: Color(0xffF2CB3B),
-                height: 24.0,
-              ),
+              NotificationBar(),
               Appbar('اخري'),
               Search(),
               Container(

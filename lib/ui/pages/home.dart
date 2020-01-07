@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jp/ui/widgets/appbar.dart';
 import 'package:jp/ui/widgets/drewar.dart';
+import 'package:jp/ui/widgets/notification_bar.dart';
 import 'package:jp/ui/widgets/search.dart';
 
 class Home extends StatefulWidget {
@@ -20,7 +21,12 @@ class HomeState extends State<Home> {
         child: DrawerDesgin(),
       ),
       body: ListView(
-        children: <Widget>[Appbar('الرئيسية'), Search(), _body()],
+        children: <Widget>[
+          NotificationBar(),
+          Appbar('الرئيسية'),
+          Search(),
+          _body()
+        ],
       ),
     );
   }

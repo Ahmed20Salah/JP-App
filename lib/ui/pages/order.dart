@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:jp/ui/widgets/appbar.dart';
 import 'package:jp/ui/widgets/drewar.dart';
+import 'package:jp/ui/widgets/notification_bar.dart';
 
 class Order extends StatelessWidget {
   final mainColor = Color(0xffF2CB3B);
@@ -15,10 +16,7 @@ class Order extends StatelessWidget {
       ),
       body: SingleChildScrollView(child: Column(
         children: <Widget>[
-          Container(
-            color: Color(0xffF2CB3B),
-            height: 24.0,
-          ),
+          NotificationBar(),
           Appbar('طلبك'),
           Container(
           padding: EdgeInsets.symmetric(horizontal: 20.0),
