@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
       ],
       supportedLocales: [
-        const Locale('ar'), // English
+        const Locale('ar'), // Arabic
       ],
       theme: ThemeData(
         primarySwatch: Colors.blue,
